@@ -15,6 +15,12 @@ createConnection().then(async () => {
         console.log(data)
     })
 
+    setTimeout(async () => { await init() }, 300);
+
+})
+
+const init = async () => {
+
     const taskController = new TaskController()
 
     let menuChoice: string;
@@ -49,5 +55,4 @@ createConnection().then(async () => {
 
     }
 
-})
-
+}
