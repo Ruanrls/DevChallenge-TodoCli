@@ -3,18 +3,17 @@ import { createConnection } from 'typeorm'
 import { TaskController } from "./controllers/TaskController"
 import figlet from "figlet"
 
-figlet("WELCOME!", function (err, data) {
-    if (err) {
-        console.log('Something went wrong...');
-        console.dir(err);
-        return
-    }
-
-    console.log(data)
-})
-
-
 createConnection().then(async () => {
+
+    figlet("WELCOME!", function (err, data) {
+        if (err) {
+            console.log('Something went wrong...');
+            console.dir(err);
+            return
+        }
+
+        console.log(data)
+    })
 
     const taskController = new TaskController()
 
