@@ -1,0 +1,39 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "Desafio backend de command line interface",
+  "main": "dist/index.ts",
+  "author": "Ruan Silva",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/cli-table": "^0.3.0",
+    "@types/figlet": "^1.5.1",
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^15.0.3",
+    "@types/uuid": "^8.3.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  },
+  "bin": {
+    "task": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "cli-table": "^0.3.6",
+    "figlet": "^1.5.0",
+    "inquirer": "^8.0.0",
+    "inquirer-date-prompt": "^2.0.1",
+    "inquirer-search-checkbox": "^1.0.0",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.32",
+    "uuid": "^8.3.2"
+  }
+}
