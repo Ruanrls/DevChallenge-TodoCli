@@ -55,3 +55,8 @@ O menu "Next tasks" lista as próximas 3 tasks que você deve executar, sendo ca
 O menu "All tasks" irá listar todas as tasks cadastradas na plataforma.
 
 ![Próximas Tasks](public/allTasks.png)
+
+
+## Bugs
+
+  - Inquirer pode apresentar inconsistências dependendo do terminal utilizado, bem como o sistema operacional.
